@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		html,body{
+			height: 100%;
+			background-color: #00BFFF;
+			color: #fff;
+			font-size: 20px;
+		}
+	.wrapper{
+		height: 100%;
+		width: 700px;
+		padding: 50px;
+		font-family: monospace;
+	}
+	.menu a{
+		text-decoration: none;
+		background: #00FFFF;
+		
+		 display: block;
+		 padding: 20px
+	}
+	.menu li {
+		position: relative;
+		list-style: none;
+	}
+	.menu_list{
+
+		display: flex;
+	}
+	.menu_list >li{
+		margin:0px 0px 0px 0px;
+
+	}
+	.menu a:hover {
+		background: #4682B4;
+		text-align: left;
+		display: block;
+	}
+	.menu_list>li:hover .sub-menu_list{
+		display: block;
+	}
+	.menu_link{
+		color:#fff;
+	}
+	.sub-menu_list{
+		display: none;
+		text-align: center;
+		position: absolute;
+		min-width: 210px;
+		left: -40px;
+		top: 100%;
+		
+	}
+	.sub-menu_link{
+		color: #fff;
+		text-align: left;
+
+	}
+	.sub-menu_list >li{
+		background-color:#fff;
+		text-align: left;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="menu">
+		<ul class="menu_list">
+			<li>
+				<a href="" class="menu_link">Home</a>
+				<ul class="sub-menu_list">
+					<li>
+						<a href="" class="sub-menu_link">Web Design</a>
+					</li>
+					<li>
+						<a href="" class="sub-menu_link">Web Development</a>
+					</li>
+					<li>
+						<a href="" class="sub-menu_link">lilustratioons</a>
+					</li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="" class="menu_link">About</a>
+			</li>
+			<li>
+				<a href="" class="menu_link">Portfolio</a>
+				<ul class="sub-menu_list">
+					<li>
+						<a href="" class="sub-menu_link">Web Design</a>
+					</li>
+					<li>
+						<a href="" class="sub-menu_link">Web Development</a>
+					</li>
+					<li>
+						<a href="" class="sub-menu_link">lilustratioons</a>
+					</li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="" class="menu_link">Blog</a>
+			</li>
+			<li>
+				<a href="" class="menu_link">Confact</a>
+			</li>
+		</ul>
+		</nav>
+	</div>
+</body>
+</html>

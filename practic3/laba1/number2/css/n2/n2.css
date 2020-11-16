@@ -1,0 +1,38 @@
+	.a{
+			box-shadow: 0 0 5px 2px red;
+		}
+		.b{
+			box-shadow: 0 0 5px;
+			text-shadow:8px 8px 2px -3px darkgreen; color:green; font-weight:900;
+
+		}
+		
+		.d{
+			 max-width: 550px;
+ 			 margin: 3em auto 2em;
+		  	 padding: 2em;
+  			 box-shadow:
+   			 0 0 0 1px silver,
+  			 0 -20px 0 -10px coral,
+             20px 0 0 -10px darkturquoise,
+  			 0 20px 0 -10px gold,
+  			-20px 0 0 -10px chartreuse;
+		}
+		.k{
+			 
+ 			 max-width: 550px;
+ 			 margin: 2em auto;
+ 			 padding: 4em;
+  			background: lightcyan;
+  			box-shadow: 0 0 4em 4em white inset;
+		}
+		.m:hover {
+			box-shadow: 0 0 0 1px #ccc,
+			0 -20px 10px -5px #6BFA76,
+			20px 0 10px -5px #FBC16A,
+			0 20px 10px -5px #F4F171,
+			-20px 0 10px -5px #6BA5FA;	
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}

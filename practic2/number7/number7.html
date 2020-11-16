@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	<h1>Швитки Даниел Витальевич</h1>
+	<canvas id="canvas" width="500" height="500">Ваш браузер не поддерживает</canvas>
+	<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	var a = canvas.getContext('2d');
+	var b = canvas.getContext('2d');
+	var c = canvas.getContext('2d');
+	var d = canvas.getContext('2d');
+	var k = canvas.getContext('2d');
+	ctx.beginPath();
+    ctx.moveTo(135,135);
+    ctx.lineTo(135,20);
+    ctx.lineTo(60,135);
+    ctx.closePath();
+    ctx.stroke();
+    a.beginPath();
+    a.moveTo(140,140);
+    a.lineTo(140,0);
+    a.lineTo(45,140);
+    a.closePath();
+    a.stroke();
+    b.strokeRect(200,200,140,100);
+    c.strokeRect(210,210,100,80);
+    d.beginPath();
+    d.arc(250,120,50,0,Math.PI*2,true);
+    d.stroke();
+    k.beginPath();
+    k.arc(250,120,30,0,Math.PI*2,true);
+    k.stroke();
+</script>
+</body>
+</html>
