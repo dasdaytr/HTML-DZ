@@ -7,11 +7,13 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var test = true;
-		if (test != true) {
-			alert('Верно');
-		} else if (test == true) {
-			alert('Не верно');
+		var a = 10;
+		var b = 4;
+		var c = a % b;
+		if (c == 0) {
+			alert('Делится');
+		} else if (c != 0) {
+			alert('делится с остатком, и остаток от деления' + ' ' + '-' + ' ' +(c));
 		}
 	</script>
 </body>

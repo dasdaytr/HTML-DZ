@@ -7,12 +7,12 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var test = true;
-		if (test != true) {
-			alert('Верно');
-		} else if (test == true) {
-			alert('Не верно');
+		var arr = [4, 2, 5, 19, 13, 0, 10];
+		var sum = 0;
+		for (var i = 0; i <=arr.length -1; i++) {
+			sum = sum + Math.pow(arr[i], 3)
 		}
+		alert(Math.sqrt(sum));
 	</script>
 </body>
 </html>		
