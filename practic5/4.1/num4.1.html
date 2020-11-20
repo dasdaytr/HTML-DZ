@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Обращение к символам строки</title>
 </head>
 <body>
-	<script type="text/javascript">
-		var str = 'abcde';
-		alert(str[0]);
-		alert(str[2]);
-		alert(str[4]);
-	</script>
+<script>
+    let str = 'abcde';
+    var out = (str[0] + ' ' + str[2] + ' ' + str[4]);
+
+    let num = '12345';
+    let p = 1;
+    for (let i = 0; i < num.length; i++) {
+        p *= num[i];
+    }
+    document.write(out + '<br>' + p);
+</script>
 </body>
 </html>

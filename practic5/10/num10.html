@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Работа с if-else</title>
 </head>
 <body>
-<script type="text/javascript">
-var a = 0; 
-if (a == 0) { 
-alert('Верно'); 
-} else if (a !== 0) { 
-alert('Не верно'); 
-}
-//10.2
-var a = 5; 
-if (a > 0) { 
-alert('Верно'); 
-} else if (a <= 0) { 
-alert('Не верно'); 
-}
-//10.3
-var a = -8; 
-if (a < 0) { 
-alert('Верно'); 
-} else if (a >= 0) { 
-alert('Не верно'); 
-}
-//10.4
-var a = 3; 
-if (a >= 0) { 
-alert('Верно'); 
-} else if (a < 0) { 
-alert('Не верно'); 
-}
-//10.5
-var a = 7; 
-if (a <= 0) { 
-alert('Верно'); 
-} else if (a > 0) { 
-alert('Не верно'); 
-}
-//10.6
-var a = 5; 
-if (a != 0) { 
-alert('Верно'); 
-} else if (a == 0) { 
-alert('Не верно'); 
-}
-//10.7
-var a = 'test'; 
-if (a == 'test') { 
-alert('Верно'); 
-} else if (a != 'test') { 
-alert('Не верно'); 
-}
-//10.8
-var a = '1'; 
-if (a === '1') { 
-alert('Верно'); 
-} else if (a !== '1') { 
-alert('Не верно'); 
+<script>
+    var out = '';
+
+    let a = 1;
+    // let a = 0;
+    // let a = -3;
+    //10.1
+    if (a == 0)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    //10.2
+    if (a > 0)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    //10.3
+    if (a < 0)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    //10.4
+    if (a >= 0)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    //10.5
+    if (a <= 0)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    //10.6
+    if (a != 0)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+    document.write(out);
+    out = '';
+
+    //10.7
+    let aa = 'test';
+    // let a = 'тест';
+    // let a = 3;
+    if (aa == 'test')
+        document.write('Верно <br>');
+    else
+        document.write('Неверно <br>');
+
+    //10.8
+    aaa = '1';
+    // let a = 1;
+    // let a = 3;
+    if (aaa === '1')
+        document.write('Верно <br>');
+    else
+        document.write('Неверно <br> ');
 </script>
 </body>
-</html>	
+</html>

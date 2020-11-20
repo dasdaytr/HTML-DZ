@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Работа с логическими переменными</title>
 </head>
 <body>
-	<script type="text/javascript">
-		var test = true;
-		if (test == true) {
-			alert('Верно');
-		} else if (test != true) {
-			alert('Не верно');
-		}
-	</script>
+<script>
+    var out = '';
+    let test = true;
+    // let test = false;
+
+    //11.1
+    if (test) //short
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    if (test === true)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+
+    //11.2
+    if (!test)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+    if (test === false)
+        out +=('Верно <br>');
+    else
+        out +=('Неверно <br>');
+   document.write(out);
+</script>
 </body>
-</html>	
+</html>

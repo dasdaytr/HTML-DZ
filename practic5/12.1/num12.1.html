@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Работа с && (и) и || (или)</title>
 </head>
 <body>
-	<script type="text/javascript">
-		var a = 5
-		if (a > 0 && a < 5) {
-			alert('Верно');
-		} else {
-		alert('Не верно');
-		}
-	</script>
+<script>
+    var out = '';
+    //12.1
+    let a = 7;
+    if (a > 0 && a < 5)
+        out += ('Верно <br>');
+    else
+        out += ('Неверно <br>');
+
+    //12.2
+    a = 2;
+    if (a == 0 || a == 2)
+        a += 7;
+    else {
+        a /= 10;
+        out += (a);
+    }
+
+    //12.3
+    a = 3, b = 5;
+    if (a <= 1 && b >= 3)
+        out += ((a + b) + '<br>');
+    else
+        out += ((b - a) + '<br>');
+
+    //12.4
+    a = 5, b = 3;
+    if ((a > 2 && a < 11) || (b >= 6 && b < 14))
+        out += ('Верно <br>');
+    else
+        out += ('Неверно <br>');
+    document.write(out);
+</script>
 </body>
 </html>

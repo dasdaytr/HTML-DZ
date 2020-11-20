@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Многомерные массивы</title>
 </head>
 <body>
-	<script type="text/javascript">
-		var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
-		alert(arr[1][0])
-	</script>
+<script>
+    let arr = [[1, 2, 3],
+               [4, 5, 6],
+               [7, 8, 9]];
+    var out = (arr[1][0] + '<br>');
+
+    let obj = {js: ['jQuery', 'Angular'], php: 'hello', css: "world"};
+    out += (obj.js[0] + '<br>');
+
+    let myArr = {ru: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'], 
+                en: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun']};
+    out +=(myArr.ru[0] + '<br>' + myArr.en[2] + '<br>');
+
+    let lang = 'ru';
+    let day = 7;
+    document.write(out + myArr[lang][day - 1]);
+</script>
 </body>
 </html>

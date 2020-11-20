@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Объекты (ассоциативные массивы)</title>
 </head>
 <body>
-	<script type="text/javascript">
-		var obj = {a: 1, b: 2, c: 3};
-		alert(obj['c']);
-		alert(obj.c);
-	</script>
+<script>
+    let obj = {a: 1, b: 2, c: 3};
+    document.write(obj['c'] + '<br>' + obj.c + '<br>');
+
+    let objj = {Коля: '1000', Вася: '500', Петя: '200'};
+    document.write('Зарплата Пети ' + objj.Петя +
+        '<be> Зарплата Коли ' + objj.Коля + '<br>');
+
+    let obja = {1: 'Понедельник', 2: 'Вторник', 3: 'Среда', 4: 'Четверг', 5: 'Пятница', 6: 'Суббота', 7: 'Воскресенье'};
+
+    let day = 3;
+    document.write(obja["2"] + '<br>' + obja[day]);
+</script>
 </body>
 </html>

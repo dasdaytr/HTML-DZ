@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Практика</title>
 </head>
 <body>
-	<script type="text/javascript">
-		alert(60*60);
-		alert(60*60*24);
-		alert(60*60*24*30);
-	</script>
+<script>
+    let secInHour = 60 * 60;
+    let secInDay = secInHour * 24;
+    let secInMonth = secInDay * 30;
+    var out = ('Секунд в часе: ' + secInHour +
+    '<br> Секунд в сутках: ' + secInDay +
+    '<br> Секунд в месяце: ' + secInMonth);
+
+    let date = new Date();
+    let currentHour = date.getHours();
+    let currentMinutes = date.getMinutes();
+    let currentSeconds = date.getSeconds();
+    out += ('<br> Текущее время: ' + currentHour + ':' + currentMinutes + ':' + currentSeconds)
+
+    let num = 100;
+    num *= num;
+    document.write(out + '<br>' + num);
+</script>
 </body>
-</html>	
+</html>
